@@ -1,0 +1,15 @@
+##单点的最短路径
+求某点到图中其他所有点的最短路径
+
+###good news dijksrat algo
+this can run in o(mlogn) time 
+### bad news
+* it always not correct with negative cycles 
+* not very distributed crelevant for inte
+
+## Bellman-ford 
+if Q is short than p' 
+
+
+## 疑问
+* 最短路，顶点 和 边 可以经过多次？
