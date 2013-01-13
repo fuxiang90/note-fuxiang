@@ -1,0 +1,32 @@
+
+#careercup
+
+### Given an integer, i, find whether it can be expressed as 2^k. Where k< i
+
+i&(i-1) == 0 can solve it 
+
+### a google problem 
+>very large bytestream (PB)
+>synchronization algorithm
+
+>given:
+>unsigned char read_byte(); ← side effect that it advances a byte pointer in the stream
+
+>write:
+>unsigned char read_sync_byte(); ← may result in >1 calls to read_byte()
+
+>remove byte '03' from the stream if the stream is in pattern 00 00 03
+
+>Example:
+
+>read_byte():
+>00 0f 42 17 00 00 03 74 00 00 00 00 14 ...
+
+>read_sync_byte():
+>00 0f 42 17 00 00 74 00 00 00 00 14 ...
+
+
+
+
+
+
