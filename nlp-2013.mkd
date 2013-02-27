@@ -1,0 +1,19 @@
+## nlp-2013 
+
+### 在语音识别上的运用
+这个在之前曾经了解过，就是一个概率 maybe is EM 。    
+
+
+### 概率
+简单的情况 
+
+### markov processes 
+
+as a dict has N word ,and we marked it V .
+
+* p(x1,x2,x3,,,,xn) 
+
+
+### Trigram Language Models
+假设 V的大小位N ，那么有N^3 
+* 如果 大量的统计 wi wi+1 wi+2 是数据量是否太大，那么做一个转换
