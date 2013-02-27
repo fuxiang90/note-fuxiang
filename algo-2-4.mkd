@@ -10,6 +10,16 @@ this can run in o(mlogn) time
 ## Bellman-ford 
 if Q is short than p' 
 
+## floyd 
+
+## dijkstra
+
+## spfa 
+## 
+let L(i,v)  is minimun length of a s-v path with <= i edges
+for v in V :
+   
+
 
 ## 疑问
 * 最短路，顶点 和 边 可以经过多次？
