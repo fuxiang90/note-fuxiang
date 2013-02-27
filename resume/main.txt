@@ -1,0 +1,33 @@
+
+
+self-introduction
+    Men, love technology, have a strong interest in the search engines , machine learningand algorithms. Strong self-learning ability, like to  explore new things.
+    Support and practice the spirit of open source 
+
+
+Education 
+    The University of Beijing University of Posts and Telecommunications,, School of Computer Science,Computer technology professional ,September 2011-present
+
+    The University of Hunan Agricultural University ,School of Economics, Agricultural Economics and Management Professional  ,September 2007 - June 2011
+
+Experience
+    this project is our lab cooperate with beijing Newcom  Technology company ,which according to the vehicle GPS information, get  6 provincial around guangzhou provincial's  Expressway information using c++.
+       implementing Astar shortest path algorithm
+       Independent design and implement program  of calculate Actual road speed
+    
+    A simple retrieval system based bbs of BUPT using python,
+        Timing crawler ,index with spimi algorithm ,166 docs  per second
+        Use redis as  cache service, zeromq processing web requests, use Json as  data interaction
+    image classification  based sift algorithm and bag of word  use c++ and dlib
+    
+    Text Classification based Bayesian using c++ , this is a assignment of Data Mining ,and my program got the highest score and  achieved a 84% accuracy rate.
+
+Awards and Honors
+     Beijing university of posts and telecommunications ACM Programming Contest ,2012 ,Eighth
+     IBM mainframe technology  national competition ,2011 ,third prize
+     Hunan Provincial Collegiate Programming Contest ,2010 ,Silver medal 
+     National Software Design Contest C language group ,2010 ,Silver medal
+
+
+     
+    
