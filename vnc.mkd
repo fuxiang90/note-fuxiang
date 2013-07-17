@@ -1,0 +1,10 @@
+
+ubuntu 12.04 unity 环境
+
+* 首先安装 sudo apt-get install vnc4server
+* vncpasswd 设置登入的密码
+* vncserver -name youname.1 启动一个桌面
+* 设置 启动脚本，如果直接登入 好像 显示桌面不完全 
+http://blog.ptpt52.info/2012/08/ubuntu-1204-unityvnc.html
+
+

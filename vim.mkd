@@ -1,0 +1,13 @@
+
+
+
+ijijw oomen ijj   jiushi 
+
+linux 
+* w 移动一个单词  2w 移动两个 dw 删除之后的单词
+* cw 删除鼠标后面的单词  
+* cc  删除整行
+* z enter ,z + . ,调整屏幕的位置
+* :1,20 d ,删除1 到20 行
+* : vsplit filename 垂直窗口打开文件 这个命令很实用 
+

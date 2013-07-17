@@ -1,0 +1,19 @@
+
+
+svn
+============
+
+## 
+1. checkout 取出
+2. commit 提交
+3. update
+4. merge 合并
+5. conflict 
+
+## 常用命令
+1. svn merge path 
+2. svn log path 
+3. svn diff path or file 查看最近一次变更
+4. svn  add file
+5. svn commit -m '' path or file 
+

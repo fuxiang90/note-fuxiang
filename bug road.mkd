@@ -1,0 +1,64 @@
+
+
+大概是来源如下的代码
+============
+    vector < vector <double > > train_data[7];
+    vector<double > data ;
+    vector<double > label[7];
+    data.resize(4);
+    if(now_l_head == NULL)
+        return ;
+    while(now_l_head ) {
+
+        int weekday = ((struct road_t*) (now_l_head->value))->weekday;
+
+
+        //遍历每一个时刻的数据
+        for(int i = 0 ; i < TIMES_DAY ; i ++) {
+            now_thisroad_speed =  ((struct road_t*) (now_l_head->value))->speed_arr[i];
+
+
+
+
+            if(i+1 != TIMES_DAY) {
+                next_thisroad_histroy_speed =  loc_road_arr[locpos].history_road[weekday][i+1];
+                next_thisroad_speed = ((struct road_t*) (now_l_head->value))->speed_arr[i+1];
+            } else {
+                //next_thisroad_histroy_speed = road_info->history_road[weekday][i]; //这个时候 就是接近午夜十二点的时刻
+                next_thisroad_histroy_speed = loc_road_arr[locpos].history_road[weekday][i]; //这个时候 就是接近午夜十二点的时刻
+                next_thisroad_speed = ((struct road_t*) (now_l_head->value))->speed_arr[i];
+            }
+
+
+            now_preroad_histroy_speed =  pre_road->history_road[weekday][i];
+
+            if(i+1 != TIMES_DAY)
+
+                next_preroad_histroy_speed =  pre_road->history_road[weekday][i+1];
+            else
+                next_preroad_histroy_speed = pre_road->history_road[weekday][i]; //这个时候 就是接近午夜十二点的时刻
+
+
+//            printf("%d %d %lf %lf %lf %lf %lf\n",
+//                    roadid , weekday ,now_thisroad_speed ,now_preroad_histroy_speed ,next_preroad_histroy_speed ,
+//                    next_thisroad_histroy_speed,next_thisroad_speed);
+
+            data[0] = now_thisroad_speed ;
+            data[1] = now_preroad_histroy_speed ;
+            data[2] = next_preroad_histroy_speed;
+            data[3] = next_thisroad_histroy_speed;
+
+            //debug
+            printf("%d\n",weekday);
+            train_data[weekday].push_back(data);
+            label[weekday].push_back(next_thisroad_speed);
+
+
+        }
+        now_l_head = now_l_head->next;
+    }//end while
+
+
+while循环结束后 ，train_data 里面没有数据，郁闷加蛋疼
+
+ssdsssds sddd

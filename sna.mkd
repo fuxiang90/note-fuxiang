@@ -1,0 +1,7 @@
+
+## 
+
+### sna 软件准备
+
+* networkx python 一个基于图论算法的库
+* 展示图节点关系[gephi](http://gephi.org/users/download/)
