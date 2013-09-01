@@ -1,0 +1,298 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{CJKutf8} %处理中文
+\usepackage[colorlinks,
+            linkcolor=red,
+            anchorcolor=blue,
+            citecolor=green
+            ]{hyperref}
+
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.75in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\begin{CJK}{UTF8}{gkai}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{ 付 翔 }{邮箱: fuxiang90@gmail.com   电话: 18810542862 }{技术博客: \url{www.fuxiang90.com}  开源: \url{github.com/fuxiang90 } }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{自我介绍}
+
+\begin{body}
+	\vspace{14pt}
+	男,热爱编程,对机器学习,搜索引擎和算法有浓厚的兴趣;有很强的自学能力,喜欢探索新事物.开源精神的支持和实践者.\\
+        %热爱并实践开源精神,github地址 github.com/fuxiang90.
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{教育背景}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{北京邮电大学计算机院 计算机专业 } \hfill 2011/09-2014/03{} \\
+% 之后再增加本科学历
+  \medskip
+	\emph{湖南农业大学经济学院 农业经济管理专业 } \hfill 2007/09-2011/6{} \\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{项目经验}
+
+\begin{body}
+	\vspace{14pt}
+	
+%%%%%%%%	
+	
+	\emph{阿里巴巴一淘搜索技术部 搜索研发实习生 }\hfill  {2013/7/15-至今}\\	
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item  产品库聚类,去重
+		%\item 2013年3月至四月，用c重写道路匹配的代码，内存减少500M ，速度提升50\%
+
+	\end{itemize}
+
+
+
+	%\emph{用c重写代码，内存由八百M减至三百M，速度提升50% }\hfill  {2013/3-2013/4}\\
+
+%%%%%%%%%%%%%%
+
+	\emph{广州及周边六省高快速路路况分析.}\hfill  {2012/6-2012/12}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item{\textbf{项目描述:}}{}  根据车辆的 GPS 信息,得到广州和周边六省的高快速路路况,为政府监管提供数据支持
+		\item {\textbf{职责:}}{}  设计地图删减算法;实现 Astar 最短路径算法,替换原有的寻路算法;独立设计并实现基于权重和路网拓扑的地图匹配算法.
+		%\item 2013年3月至四月，用c重写道路匹配的代码，内存减少500M ，速度提升50\%
+
+	\end{itemize}
+
+	%\emph{用c重写代码，内存由八百M减至三百M，速度提升50% }\hfill  {2013/3-2013/4}\\
+
+%%%%%%%%%%%%%%
+
+	
+	\emph{基于历史数据的道路速度预测 .}\hfill  2013/3-2013/6\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item{\textbf{项目描述:}}{}  广州市发布道路两个月历史速度信息(约2亿条)，根据当前道路速度预测之后一段时间内的速度
+		\item 设计基于有向图的调度算法，使在内存中道路信息最少，减少内存使用
+		\item 用梯度下降算法处理道路的历史信息,生成预测模型
+	\end{itemize}
+
+%%%%%%%%%%%%%%%
+
+ 	\emph{参加雅虎北京黑客马拉松决赛,编程24小时 完成一个基于flickr的图片推荐的应用.} \hfill {2013/5/18 –2013/5/19}\\
+	\vspace*{4pt}
+%%%%%%%%%%%%%
+
+%	 \emph{基于北邮 bbs 的检索系统的开发,个人开源项目,python开发.} \hfill {2012/8 –2012/12}\\
+%	\vspace*{-4pt}
+%	\begin{itemize} \itemsep -0pt
+%		\item  单线程爬虫,定时爬取论坛信息
+%		\item  单次遍历文档建立索引 ,平均每 s 处理 166 个文档,支持简单的查询,并可定制邮件推送服务
+%		\item Redis 作为缓存服务,zeromq 处理 web 请求,Json 作为数据交互
+%	\end{itemize}
+% 	
+
+% 	\emph{基于 sift 和 bag of word 图像分类.} \hfill {2013/1-2013/1}\\
+% 	\vspace*{4pt}
+%	\begin{itemize} \itemsep -0pt
+%		\item  Sift 提取特征,然后聚类,训练数据向聚类中心映射,得到每一个训练数据在该聚类中心空间的一个低维表示
+%		\item 开源软件 dlib 对训练集进行训练,利用svm 进行分类 
+%	\end{itemize}
+	
+	
+%	\emph{文本分类.} \hfill {2012/8 - 2012/12}\\
+%	\vspace*{-4pt}
+%	\begin{itemize} \itemsep -0pt
+%		\item  {\textbf{项目描述:}}{}  数据挖掘课程期末大作业,贝叶斯实现分类算法,对文本进行分类,每个分类 1000 文本作为训练集
+%		\item {\textbf{环境: }}{} linux ,c++ ,分词使用开源分词组件 ,取得了 84\%的正确率
+%		%\item 程序得分最高,速度最快 ,取得了 84\%的正确率
+%	\end{itemize}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% search
+\header{搜索实践}
+
+\begin{body}
+	\vspace{14pt}
+	
+ 	\emph{基于北邮 bbs 的检索系统的开发,个人开源项目,python开发.} \hfill {2012/8 –2012/12}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+%		\item  单线程爬虫,定时爬取论坛信息
+		\item  单次遍历文档建立索引 ,平均每 s 处理 166 个文档,支持简单的查询,并可定制邮件推送服务
+		\item 单线程爬虫, Redis 作为缓存服务,zeromq 处理 web 请求,Json 作为数据交互
+	\end{itemize}
+	
+	\emph{小型网站关键词推荐 ,python,c++开发.} \\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+
+		\item {\textbf{职责:}}{}   中期代码重构，串通整个流程，根据指定的关键词，给出和网站最相关的关键词
+	\end{itemize}
+	
+ 	\emph{基于 sift 和 bag of word 图像分类.} \hfill {2013/1-2013/1}\\
+ 	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item  Sift 提取特征,然后聚类,训练数据向聚类中心映射,得到每一个训练数据在该聚类中心空间的一个低维表示
+		\item 开源软件 dlib 对训练集进行训练,利用svm 进行分类 
+	\end{itemize}
+	\emph{贝叶斯文本分类. linux ,c++ 实现} \hfill {2012/8 - 2012/12}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+%		\item  {\textbf{项目描述:}}{}  数据挖掘课程期末大作业,贝叶斯实现分类算法,对文本进行分类,每个分类 1000 文本作为训练集
+		\item {} 五个分类,每个分类 1000 文本作为训练集,分词使用开源分词组件 ,取得了 84\%的正确率
+		%\item 程序得分最高,速度最快 ,取得了 84\%的正确率
+	\end{itemize}
+
+
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{编程语言:}}{} 六万行C代码，熟悉C++和 python \\
+%	\medskip
+%	\emph{\textbf{个人开源代码:}}{} CSimpleLib ，fSearch-mini \\
+	\medskip
+	\emph{\textbf{操作系统:}}{} 3年Linux使用经验,Windows \\
+	\medskip
+	\emph{\textbf{编程工具:}}{} Vim,Codeblocks,Eclipse,Visual Studio,Git \\
+\end{body}
+
+\smallskip
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{获奖情况}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf {北京邮电大学第七届ACM程序设计竞赛金奖(第四名)}  \hfill  {2013/03} \\
+	\smallskip
+
+	\textbf {北京邮电大学第六届ACM程序设计竞赛银奖(第八名)}  \hfill  {2012/03} \\
+%	\smallskip
+%	\textbf {IBM 大型主机技术 2011 全国应用大赛三等奖}  \hfill  {2011/10} \\
+
+	\smallskip
+	\textbf {湖南省第六届大学生程序设计竞赛二等奖(ACM 形式)}   \hfill  {2010/10}\\
+	
+	\smallskip
+	\textbf{全国软件设计大赛决赛 C 语言组二等奖 } \hfill  {2010/08} \\
+\end{body}
+
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{课外实践}
+
+\begin{body}
+	\vspace{14pt}
+	\emph {北京邮电大学腾讯创新俱乐部技术部核心成员} \hfill {} \emph{2011/09--至今}\\
+	\emph {爱好户外徒步,骑行} \hfill {} \\
+
+	\smallskip
+	\emph {\textbf{本科期间:}}{} {09 年和同学一起创立第一个湖南省省内高校专注于开源理念的协会,担任技术部部长,参与举办多个开源知识讲座,在校内推广开源理念.} \hfill{} \emph{2009 - 2011}\\
+
+\end{body}
+
+\smallskip
+\end{CJK}
+
+\end{document}
+
